@@ -1,0 +1,180 @@
+body {
+  font-family: arial;
+  background: #E1E9ED;
+}
+.wrapper {
+  padding-left: 20%;
+}
+h1 span {
+  clear: both;
+  display: block;
+  font: bold 72px Arial;
+}
+.homeHeader {
+  position: relative;
+}
+.homeHeader ul.links {
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+}
+.homeHeader ul.links li,
+.homeStories .hashtags li {
+  display: inline-block;
+}
+.homeHeader ul.links li a,
+.homeStories .hashtags li a {
+  text-decoration: none;
+  color: #000;
+}
+.homeHeader ul.links li a:hover,
+.homeStories .hashtags li a:hover {
+  text-decoration: underline;
+}
+.homeHeader ul.links li:nth-child(n+2),
+.homeStories .hashtags li:nth-child(n+2) {
+  padding-left: 20px;
+}
+.homeHeader img {
+  position: absolute;
+  left: -200px;
+  top: 10px;
+}
+.limitReached {
+  color: #ff0000;
+}
+.commentWidgetWrapper {
+  margin: auto;
+  position: absolute;
+  z-index: 99999;
+  left: 37.5%;
+  right: 37.5%;
+  top: 36%;
+  background-color: #000;
+  background: #fff;
+  margin: 0px auto;
+  padding: 15px;
+  box-shadow: 1px 1px 4px 1px #eee;
+}
+.commentWidgetWrapper h2 {
+  border-bottom: 1px solid #7A3053;
+  font: 16px Arial;
+}
+.commentWidgetWrapper #nameInput {
+  margin-top: 30px;
+}
+.commentWidgetWrapper input {
+  height: 30px;
+}
+.commentWidgetWrapper input,
+textarea {
+  display: block;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #000000;
+  clear: both;
+  width: 100%;
+}
+.commentWidgetWrapper input#submit {
+  width: auto;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.commentWidgetWrapper input#submit.active {
+  background-color: #517A38;
+}
+.commentWidgetWrapper input#submit.inactive {
+  background-color: #B9C9B0;
+}
+.commentWidgetWrapper input#submit:hover {
+  background-color: #3D692A;
+}
+.commentWidgetWrapper #commentCounter {
+  margin-top: 5px;
+}
+.commentWidgetWrapper textarea {
+  font-size: 16px;
+  min-height: 100px;
+  max-height: 300px;
+}
+.commentWidgetWrapper #nameInput label,
+#commentInput label,
+#commentCounter {
+  display: block;
+  font: 14px Arial;
+}
+.commentWidgetWrapper #submitButton {
+  margin: 10px 0;
+  padding: 5px 0;
+}
+.commentWidgetWrapper #close {
+  width: 25px;
+  height: 25px;
+  float: right;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: url(../images/cross.jpg) no-repeat -5px -5px;
+}
+.commentWidgetWrapper #close:hover {
+  background: url(../images/cross.jpg) no-repeat -39px -5px;
+  cursor: pointer;
+}
+.homeStories {
+  padding-right: 100px;
+  margin-top: 50px;
+}
+.homeStories .hashtags {
+  list-style: none;
+  padding: 0;
+}
+.homeStories h1 {
+  font: bold italic 16px arial;
+}
+.homeStories button {
+  cursor: pointer;
+  text-transform: uppercase;
+  background: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: none;
+  font: 14px arial;
+  text-shadow: none;
+  border: 2px solid #000;
+}
+.vote-counter-wrapper {
+  position: relative;
+}
+.vote-counter {
+  position: absolute;
+  left: -120px;
+}
+.vote .down,
+.vote .up,
+.vote .value {
+  display: block;
+  cursor: pointer;
+  width: 28px;
+  float: left;
+  line-height: 28px;
+  text-align: center;
+  height: 28px;
+}
+.vote .value {
+  width: auto;
+  min-width: 30px;
+  max-width: 50px;
+}
+.vote .down {
+  background: url(../images/thumbs.jpg) no-repeat -2px -37px;
+}
+.vote .up {
+  background: url(../images/thumbs.jpg) no-repeat -3px -3px;
+}
+.homeStories #story {
+  position: relative;
+}

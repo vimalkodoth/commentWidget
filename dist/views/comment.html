@@ -1,0 +1,22 @@
+<div class="commentWidgetWrapper" ng-show="commentWidgetIsActive">
+<div id="close" ng-click="commentWidgetIsActive=false"></div>
+<form id="commentWidgetForm">
+<h2>{{header}}</h2>
+<div id="nameInput">
+  <label for="name">{{nameHeader}}</label>
+  <input type="text" name="name" id="name" value="" ng-model="commentName"><br>
+</div>
+<div id="commentInput">
+<label for="comment">{{commentHeader}}</label>
+	<textarea form="commentWidgetForm" ng-model="commentContent"></textarea>
+</div>
+<div id="commentCounter" ng-class="{limitReached: limitReached()}">
+{{commentContent.length || 0}} characters out of {{commentLengthLimit}}
+</div>
+<div id="submitButton">
+	<input id="submit" type="submit" value="Save" ng-class="limitReached() ? 'inactive' : 'active' " ng-click="save()">
+</div>
+
+</form>
+</div>
+

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <title>MHR Test App</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body ng-controller='WelcomeCtrl'>
+<div class="wrapper">
+  <div class="homeHeader">
+  	<img src="/images/logo.png" />
+  	<h1><span>WEB</span><span>DESIGN</span><span>BLOG</span></h1>
+  	<ul class="links">
+  		<li><a href="#">Home</a></li>
+  		<li><a href="#">About</a></li>
+  		<li><a href="#">Portfolio</a></li>
+  		<li><a href="#">Blog</a><li>
+  	</ul>
+  </div>
+
+  <div class="homeStories">
+	  <div id="story-0">
+    <div class="vote-counter-wrapper">
+      <div class="vote-counter">
+        <vote-counter-widget></vote-counter-widget>
+      </div>
+    </div>
+	  <section>
+	  		<h1>Heading One</h1>
+	  		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+	  		<p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+	  		</p>
+	  		<ul class="hashtags">
+	  			<li><a href="#">#tag1</a></li>
+	  			<li><a href="#">#tag2</a></li>
+	  			<li><a href="#">#tag3</a></li>
+	  		</ul>
+	  		<button type="button" ng-click="openCommentWidget('story-0')">Comment</button>
+        <comment-widget id="story-0"></comment-widget>
+	  </section>
+	  </div>
+  </div>
+
+</div>
+  <script src="/js/bundle.js"></script>
+  <script src="/js/templates.js"></script>
+</body>
+</html>
