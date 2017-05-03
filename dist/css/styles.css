@@ -76,7 +76,9 @@ textarea {
   clear: both;
   width: 100%;
 }
-.commentWidgetWrapper input#submit {
+.commentWidgetWrapper input#submit,
+.comments .delete,
+.comments .edit {
   width: auto;
   cursor: pointer;
   border-radius: 2px;
@@ -124,6 +126,20 @@ textarea {
   background: url(../images/cross.jpg) no-repeat -39px -5px;
   cursor: pointer;
 }
+.comments .edit,
+.comments .delete {
+  color: #000;
+  max-width: 100px;
+  float: right;
+  margin: 5px;
+}
+.comments .name {
+  font: bold normal 16px arial;
+  padding: 5px 0;
+}
+.comments > div {
+  margin: 5px 0;
+}
 .homeStories {
   padding-right: 100px;
   margin-top: 50px;
@@ -135,7 +151,9 @@ textarea {
 .homeStories h1 {
   font: bold italic 16px arial;
 }
-.homeStories button {
+.homeStories button,
+.comments .edit,
+.comments .delete {
   cursor: pointer;
   text-transform: uppercase;
   background: none;
@@ -177,4 +195,7 @@ textarea {
 }
 .homeStories #story {
   position: relative;
+}
+.homeStories > div {
+  clear: both;
 }

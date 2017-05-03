@@ -14,7 +14,7 @@
 {{commentContent.length || 0}} characters out of {{commentLengthLimit}}
 </div>
 <div id="submitButton">
-	<input id="submit" type="submit" value="Save" ng-class="limitReached() ? 'inactive' : 'active' " ng-click="save()">
+	<input id="submit" type="submit" value="Save" ng-class="limitReached() ? 'inactive' : 'active' " ng-click="save(index)">
 </div>
 
 </form>
