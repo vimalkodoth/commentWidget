@@ -45,6 +45,7 @@ var commentWidget = function($parse, $rootScope, $timeout, $compile) {
 
 			scope.$on('OPEN_COMMENT_WIDGET', function(evt, args){
 				if(args.post_id === scope.post_id){
+					$scope.index = undefined;
 					scope.commentWidgetIsActive = true;
 				}
 			});
